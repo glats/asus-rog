@@ -243,6 +243,8 @@ exec --no-startup-id dunst
 exec --no-startup-id libinput-gestures -c $HOME/.config/libinput-gestures-i3.conf
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 #exec --no-startup-id autotiling
+exec --no-startup-id xbindkeys
+exec --no-startup-id solaar -w hide
 
 binding_mode_indicator no
 smart_gaps on
