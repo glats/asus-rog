@@ -205,16 +205,16 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec $HOME/.scripts/volume.sh up
-bindsym XF86AudioLowerVolume exec $HOME/.scripts/volume.sh down
-bindsym XF86AudioMute exec $HOME/.scripts/volume.sh mute
+bindsym XF86AudioRaiseVolume exec ~/.scripts/volume.sh up
+bindsym XF86AudioLowerVolume exec ~/.scripts/volume.sh down
+bindsym XF86AudioMute exec ~/.scripts/volume.sh mute
 
-bindsym XF86KbdBrightnessUp exec $HOME/.scripts/kbd.sh up
-bindsym XF86KbdBrightnessDown exec $HOME/.scripts/kbd.sh down
+bindsym XF86KbdBrightnessUp exec ~/.scripts/kbd.sh up
+bindsym XF86KbdBrightnessDown exec ~/.scripts/kbd.sh down
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec $HOME/.scripts/brightness.sh up
-bindsym XF86MonBrightnessDown exec $HOME/.scripts/brightness.sh down
+bindsym XF86MonBrightnessUp exec ~/.scripts/brightness.sh up
+bindsym XF86MonBrightnessDown exec ~/.scripts/brightness.sh down
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -233,16 +233,16 @@ bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
 
 # Autostart applications
-exec_always --no-startup-id $HOME/.config/polybar/panel.sh
-exec --no-startup-id $HOME/.screenlayout/home.sh
+exec_always --no-startup-id ~/.config/polybar/panel.sh
+exec --no-startup-id ~/.screenlayout/home.sh
 exec --no-startup-id mate-screensaver
 exec --no-startup-id setxkbmap -synch
-exec --no-startup-id $HOME/.scripts/player.py
-exec --no-startup-id $HOME/.fehbg; sleep 1; picom -b
+exec --no-startup-id ~/.scripts/player.py
+exec --no-startup-id ~/.fehbg; sleep 1; picom -b
 exec --no-startup-id dunst
-exec --no-startup-id libinput-gestures -c $HOME/.config/libinput-gestures-i3.conf
+exec --no-startup-id libinput-gestures -c ~/.config/libinput-gestures-i3.conf
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
-#exec --no-startup-id autotiling
+exec --no-startup-id paplay ~/Music/Windows-Startup-Sounds-WAV/Microsoft_Windows_95_Startup_Sound.wav
 exec --no-startup-id xbindkeys
 exec --no-startup-id solaar -w hide
 

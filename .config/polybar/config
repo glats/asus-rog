@@ -25,10 +25,9 @@ base06 = ${xrdb:color13:#0e5a94}
 base0F = ${xrdb:color14:#b31e8d}
 base07 = ${xrdb:color15:#7a2d00}
 
-background = #00000000
-background-alt = ${colors.base00}
+background = #50505000
 foreground = ${colors.base07}
-foreground-alt = ${colors.base04}
+foreground-alt = ${colors.base03}
 alert = ${colors.base08}
 warning = ${colors.base0A}
 green = ${colors.base0B}
@@ -149,7 +148,7 @@ label-visible-background = ${self.label-focused-background}
 label-urgent = %index%!
 label-urgent-padding = 1
 label-urgent-background = ${colors.foreground}
-label-urgent-foreground = ${colors.background-alt}
+label-urgent-foreground = ${colors.foreground-alt}
 
 label-separator = " "
 
@@ -226,7 +225,7 @@ animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-foreground = ${colors.warning}
+animation-charging-foreground = ${colors.foreground}
 animation-charging-framerate = 750
 
 [module/temperature]

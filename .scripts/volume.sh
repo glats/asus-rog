@@ -2,7 +2,7 @@
 
 display='wayland'; bar='_'
 [[ -z "${WAYLAND_DISPLAY}" ]] && display='xorg'; bar='─'
-sink_nr=$(pactl list short sinks | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,' | head -n 1)
+sink_nr=$(pactl list short sinks | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,' | head -n 1)
 icon_low="notification-audio-volume-low"
 icon_med="notification-audio-volume-medium"
 icon_high="notification-audio-volume-high"
